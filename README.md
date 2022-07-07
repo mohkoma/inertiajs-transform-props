@@ -1,0 +1,2 @@
+## About This package
+This package allow you to transform the props you get from Inertia before getting them in your Vue Component. It's a good replacement for the old Interia `transformProps` which has been removed.

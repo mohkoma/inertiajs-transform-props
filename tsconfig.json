@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "target": "esnext",
+        "module": "esnext",
+        "declaration": true,
+        "strict": true,
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "allowJs": true,
+        "strictPropertyInitialization": false,
+        "outDir": "./lib",
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}

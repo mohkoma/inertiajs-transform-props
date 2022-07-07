@@ -1,0 +1,30 @@
+{
+  "name": "inertiajs-transform-props",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mohkoma@github.com/mohkoma/inertiajs-transform-props.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohkoma/inertiajs-transform-props/issues"
+  },
+  "homepage": "https://github.com/mohkoma/inertiajs-transform-props#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@babel/types": "^7.18.7",
+    "@inertiajs/inertia": "^0.11.0",
+    "@inertiajs/inertia-vue3": "^0.6.0",
+    "vue": "^3.2.37"
+  }
+}
