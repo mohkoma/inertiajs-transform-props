@@ -11,7 +11,16 @@
     "type": "git",
     "url": "git+https://mohkoma@github.com/mohkoma/inertiajs-transform-props.git"
   },
-  "keywords": [],
+  "keywords": [
+    "inertia-js",
+    "inertia",
+    "vue",
+    "vue3",
+    "laravel",
+    "typescript",
+    "transformProps",
+    "props"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
