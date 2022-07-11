@@ -3,16 +3,15 @@
         "noImplicitAny": false,
         "target": "esnext",
         "module": "esnext",
-        "declaration": false,
+        "declaration": true,
         "strict": true,
         "jsx": "preserve",
         "moduleResolution": "node",
         "sourceMap": true,
         "allowJs": true,
         "strictPropertyInitialization": false,
-        "outDir": "./lib",
-        "skipLibCheck": true,
+        "outDir": "./lib"
     },
     "include": ["src"],
-    "exclude": ["node_modules", "**/src/adapter"]
+    "exclude": ["node_modules"]
 }
