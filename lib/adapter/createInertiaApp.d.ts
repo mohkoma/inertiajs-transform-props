@@ -1,1 +1,1 @@
-export { createInertiaApp } from '@inertiajs/inertia-vue3';
+export { createInertiaApp as default } from '@inertiajs/inertia-vue3';
