@@ -4,8 +4,29 @@ This package allows you to transform the props you get from Inertia before getti
 ## How to Install?
 `npm install inertiajs-transform-props`
 
-## How to use it
-You can add this package to the app's entrepoint file ex `app.ts` or `app.js`, It will be just a replacement for the default `h` function provided by the vue core.
+## How to implement
+
+### Method 1 - Fully transform props while navigating
+Using this function will transform all the props, even when navigating between the pages as SPA.
+All you need to do is to use `createInertiaApp` from this package instead of the one provided by Inertia.
+
+```javascript
+import { createApp, h } from 'vue';
+import { createInertiaApp } from 'inertiajs-transform-props';
+//import { createInertiaApp } from '@inertiajs/inertia-vue3'
+
+createInertiaApp({
+  resolve: name => require(`./Pages/${name}`),
+  setup({ el, App, props, plugin }) {
+    createApp({ render: () => h(App, props) })
+      .use(plugin)
+      .mount(el)
+  },
+})
+```
+
+### Method 2 - Directly in the access point
+You can add this package to the app's entrepoint file ex `app.ts` or `app.js`, It will be just a replacement for the default `h` function provided by the vue core (Please note that the props will be transformed only in the first load of the page, to use it while navigating between pages check the previous method).
 
 ```javascript
 import { createApp } from 'vue';
@@ -22,7 +43,9 @@ createInertiaApp({
 })
 ```
 
-Then in your page component you can just add the `transform` properity to your props object.
+## How to use it
+In your page component you can just add the `transform` properity to your props object.
+
 ```javascript
 props: {
       article: {

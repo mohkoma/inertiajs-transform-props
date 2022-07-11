@@ -1,0 +1,1 @@
+export { createInertiaApp } from '@inertiajs/inertia-vue3';
