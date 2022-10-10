@@ -1,5 +1,6 @@
 {
   "name": "inertiajs-transform-props",
+  "type": "module",
   "version": "1.0.6",
   "description": "",
   "main": "./lib/index.js",
