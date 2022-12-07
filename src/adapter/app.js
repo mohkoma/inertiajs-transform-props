@@ -1,7 +1,7 @@
 import { useForm, useRemember } from '@inertiajs/inertia-vue3'
 import { computed, markRaw, ref } from 'vue'
 import { createHeadManager, Inertia } from '@inertiajs/inertia'
-import { h_spa as h } from '../trasformer';
+import { h_spa as h } from '../trasformer/index.js';
 
 const component = ref(null)
 const page = ref({})

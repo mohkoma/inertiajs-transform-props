@@ -1,2 +1,2 @@
-export * from './trasformer';
-export { default as createInertiaApp } from './adapter/createInertiaApp';
+export * from './trasformer/index.js';
+export { default as createInertiaApp } from './adapter/createInertiaApp.js';

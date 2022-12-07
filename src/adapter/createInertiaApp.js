@@ -1,5 +1,5 @@
 import { createSSRApp, h } from 'vue'
-import App, { plugin } from './app'
+import App, { plugin } from './app.js'
 
 export default async function createInertiaApp({ id = 'app', resolve, setup, title, page, render }) {
   const isServer = typeof window === 'undefined'
